@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Lato";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Lato";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: "Baloo Bhaina", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.wrapper-0102-1 h1 {
+  font-size: 2.4rem;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.wrapper-0102-1 .container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  overflow: hidden;
+}
+.wrapper-0102-1 .hover-card {
+  width: 30%;
+  margin: calc(5% / 3);
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+  height: 330px;
+  background: #222;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0);
+          transform: rotateX(0) rotateY(0);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.wrapper-0102-1 .hover-card.card-rounded.mouse-out {
+  -webkit-transform: rotateX(0) rotateY(0) !important;
+          transform: rotateX(0) rotateY(0) !important;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+.wrapper-0102-1 .hover-card .card-img {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.wrapper-0102-1 .hover-card .card-img img {
+  max-width: 100%;
+  height: auto;
+}

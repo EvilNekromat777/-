@@ -1,59 +1,57 @@
-// Подключаем шрифты
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
-
-// Шрифт по умолчанию
-$fontfamili: "Lato";
-
-// Подключаем файлы со стилями страниц и элементов
-@import "header.scss";
-@import "footer.scss";
-
-// Обнуление: общие параметры
 @import "null.scss";
 
-// Миксины
-@import "mixins.scss";
-
-// Оболочка
-.wrapper {
-    overflow: hidden;
-    min-height: 100%;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+body {
+  font-family: 'Baloo Bhaina', sans-serif;
+  margin: 0;
+  text-align: center;
 }
 
-// Основной блок
-.page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    @include flexbox();
-    flex-direction: column;
-}
+.wrapper-0102-1{
 
-// Основная сетка
-.contaner {
-    max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+    h1 {
+        font-size: 2.4rem;
+        margin: 0;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+      }
 
-.ibg {
+      .container {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        max-width: 1200px;
+        overflow: hidden;
+      }
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.ibg img {
-
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
+      .hover-card {
+        width: 30%;
+        margin: calc(5% / 3);
+        box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+        height: 330px;
+        background: #222;
+        border-radius: 5px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform: rotateX(0) rotateY(0);
+        transition: 0.2s ease-out;
+        
+        &.card-rounded {
+          &.mouse-out {
+            transform: rotateX(0) rotateY(0) !important;
+            transition: 0.8s ease-out;
+          }
+        }
+        
+        .card-img {
+          height: 220px;
+          overflow: hidden; 
+          border-radius: 5px 5px 0 0;
+          
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
 }
