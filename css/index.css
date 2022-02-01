@@ -90,6 +90,9 @@ h6 {
   font-size: inherit;
 }
 
+.parallax-hover-card {
+  text-align: center;
+}
 .parallax-hover-card h1 {
   font-size: 2.4rem;
   margin: 0;
@@ -143,8 +146,8 @@ h6 {
 }
 
 .backwrap-gradient {
-  width: 75%;
-  height: 400px;
+  width: 100%;
+  height: 500px;
   margin: 50px auto;
   background: #113243;
   /* Old browsers */
@@ -386,4 +389,12 @@ h6 {
 .smooth-burger .close-hamburguer .line-bottom {
   -webkit-transform: translateY(-200%) rotate(135deg);
           transform: translateY(-200%) rotate(135deg);
+}
+
+.background-cogwheel {
+  margin: 50px auto;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: #dce5e9;
 }
