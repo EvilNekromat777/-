@@ -398,3 +398,84 @@ h6 {
   overflow: hidden;
   background: #dce5e9;
 }
+
+.card-hover-1 {
+  margin: 50px auto;
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+.card-hover-1 .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 300px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card-hover-1 .card:hover .card-front {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.card-hover-1 .card:hover .card-back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+.card-hover-1 .card-front {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card-hover-1 .card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+.card-hover-1 .card-back h2 {
+  margin: 60% auto 35% auto;
+  font-size: 26px;
+}
+.card-hover-1 .card-back h2 span {
+  font-size: 20px;
+}
+.card-hover-1 .card-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.card-hover-1 .card-back a:hover {
+  color: #000000;
+  background-color: #fff;
+}
