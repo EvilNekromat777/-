@@ -1,5 +1,5 @@
-console.log('Hello, World');
 
+// ============   parallax-hover-card  ==============
 const cards = Array.from(document.querySelectorAll('.hover-card'));
 const props = {
   perspective: '500px',
